@@ -25,7 +25,7 @@ self.addEventListener("fetch", (event) => {
 });
 
 // Activate SW
-self.addEventListener("install", (event) => {
+self.addEventListener("activate", (event) => {
 	const cacheWhitelist = [];
 	cacheWhitelist.push(CACHE_NAME);
 
